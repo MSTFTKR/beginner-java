@@ -56,13 +56,13 @@ public class ExeMain {
                     scanner.nextLine();
                     System.out.println("Şarkıcıyı Yazınız");
                     String newName=scanner.nextLine();
-                    songers.updateSonger(index, newName);
+                    songers.updateSonger(index-1, newName);
                     break;
                     
                 case 4:
                         System.out.println("Sİlmek istediğiniz şarkıcının indecini giriniz.");
                         int position=scanner.nextInt();
-                        songers.removeSonger(position);
+                        songers.removeSonger(position-1);
                     break;
                     
                 case 5:
